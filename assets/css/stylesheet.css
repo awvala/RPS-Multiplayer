@@ -1,0 +1,37 @@
+body {
+    background-color: #ffdfa4;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.bg-primary {
+    background-color: #ff8a76!important;
+}
+
+.centerText {
+    text-align: center!important;
+}
+
+#rockIcon {
+    width: 100px;
+    padding: 20px;
+    background-color: #bfdbff;
+}
+
+#paperIcon {
+    width: 100px;
+    padding: 20px;
+    background-color: #6085b2;
+}
+
+#scissorsIcon {
+    width: 100px;
+    padding: 20px;
+    background-color: #a4ceff;
+}
+
+.fas {
+    color: white;
+}
