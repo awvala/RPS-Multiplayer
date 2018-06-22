@@ -36,13 +36,17 @@
 
                 <div class="row">
                     <div class="col-sm-4 centerText" id="playerChoice">
+                        <p id="currentName"></p>
                         <p>?</p>
+                        <p id="currentWinBox">W/L</p>
                     </div>
                     <div class="col-sm-4 centerText" id="results">
                         <p>VS.</p>
                     </div>
                     <div class="col-sm-4 centerText" id="opponentChoice">
+                        <p id="opponentName"></p>
                         <p>?</p>
+                        <p id="opponentWinBox">W/L</p>
                     </div>
                 </div>
 
@@ -52,28 +56,11 @@
                     </div>
                 </div>
 
-                <div class="row" id="weaponRow">
-                    <div class="col-xs-3 centerText" id="rockIcon">
-                        <i class="fas fa-hand-rock"></i>
-                    </div>
-                    <div class="col-xs-3 centerText" id="paperIcon">
-                        <i class="fas fa-hand-paper"></i>
-                    </div>
-                    <div class="col-xs-3 centerText" id="scissorsIcon">
-                        <i class="fas fa-hand-scissors"></i> 
-                    </div>
-                    <div class="col-sm-3 centerText" id="scoreBox">
-
-                        <div class="row">
-                            <div class="col-xs-3 centerText">
-                                <h5>W/</h5>
-                            </div>
-                            <div class="col-xs-3" id="winBox"></div>
-                            <div class="col-xs-3 centerText">
-                                <h5>L/</h5>
-                            </div>
-                            <div class="col-xs-3 centerText" id="lossBox"></div>
-                        </div>
+                <div class="col-xs-10 centerText" id="weaponRow">
+                    <div class=" btn-group-toggle" data-toggle="buttons" role="group" aria-label="Select Your Weapon!">
+                        <button type="button" class="btn btn-secondary" id="rockIcon"><i class="fas fa-hand-rock fa-2x"></i></button>
+                        <button type="button" class="btn btn-secondary" id="paperIcon"><i class="fas fa-hand-paper fa-2x"></i></button>
+                        <button type="button" class="btn btn-secondary" id="scissorsIcon"><i class="fas fa-hand-scissors fa-2x"></i> </button>
                     </div>
                 </div>
             </section>

@@ -14,24 +14,35 @@ nav {
     text-align: center!important;
 }
 
+#weaponRow {
+    margin-bottom: 20px;
+}
+
 #rockIcon {
-    width: 100px;
+    width: 80px;
     padding: 20px;
-    background-color: #bfdbff;
+    background-color: #5cb8e7;
+    border: 0px;
 }
 
 #paperIcon {
-    width: 100px;
+    width: 80px;
     padding: 20px;
-    background-color: #6085b2;
+    background-color: #c150ff;
+    border: 0px;
 }
 
 #scissorsIcon {
-    width: 100px;
+    width: 80px;
     padding: 20px;
-    background-color: #a4ceff;
+    background-color: #f35b68;
+    border: 0px;
 }
 
 .fas {
     color: white;
+}
+
+#chatLog {
+    width: 100%;
 }
