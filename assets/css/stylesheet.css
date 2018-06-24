@@ -19,6 +19,11 @@ body {
     margin-bottom: 20px;
 }
 
+#versusImg {
+    max-width: 75px;
+    height: auto;
+}
+
 #rockIcon {
     width: 80px;
     padding: 20px;
@@ -46,4 +51,18 @@ body {
 
 #chatLog {
     width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.turnIndicator {
+    animation: glow .5s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px blueviolet;
+    }
 }

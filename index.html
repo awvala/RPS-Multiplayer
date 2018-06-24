@@ -18,53 +18,52 @@
 
         <div class="container">
             <section id="nameSection" class="centerText">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Player Name" aria-label="Player Name" aria-describedby="basic-addon2">
+                <div class="input-group mb-3" id="nameInputGroup">
+                    <input type="text" class="form-control" id="inputName" placeholder="Player Name" aria-label="Player Name" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="submit">Start</button>
+                        <button class="btn btn-outline-secondary" id="newPlayer" type="submit">Start</button>
                     </div>
                 </div>
                 <p id="playerGreeting">Sign in to get started!</p>
             </section>
 
-            <section id="gamePad">
+            <section class= "hidden" id="gamePad">
                 <div class="row">
                     <div class="col-sm-12 centerText">
-                    <p id="opponentMessage">Waiting for your opponent</p>
+                    <p id="gameMessage">Waiting for your opponent</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-4 centerText" id="playerChoice">
-                        <p id="currentName"></p>
-                        <p>?</p>
-                        <p id="currentWinBox">W/L</p>
+                    <div class="col-sm-4 centerText" class="player-One">
+                        <p class="player-One" id="player1Name"></p>
+                        <p class="player-One" id="player1Choice">?</p>
+                        <p class="player-One"id="player1WinBox"></p>
                     </div>
                     <div class="col-sm-4 centerText" id="results">
-                        <p>VS.</p>
+                        <img id="versusImg" class "img-responsive" src="assets/images/Vs.png" alt="versus image">
                     </div>
-                    <div class="col-sm-4 centerText" id="opponentChoice">
-                        <p id="opponentName"></p>
-                        <p>?</p>
-                        <p id="opponentWinBox">W/L</p>
+                    <div class="col-sm-4 centerText" class="player-Two" >
+                        <p class="player-Two" id="player2Name"></p>
+                        <p class="player-Two" id="player2Choice">?</p>
+                        <p class="player-Two" id="player2WinBox"></p>
                     </div>
                 </div>
 
+                <div class="CenterText" id="weaponRow">
+                    <div class=" btn-group-toggle" data-toggle="buttons" role="group" aria-label="Select Your Weapon!">
+                        <button type="button" class="btn btn-secondary weapon" id="rockIcon" disabled data-weapon="rock"><i class="fas fa-hand-rock fa-2x"></i></button>
+                        <button type="button" class="btn btn-secondary weapon" id="paperIcon" disabled data-weapon="paper"><i class="fas fa-hand-paper fa-2x"></i></button>
+                        <button type="button" class="btn btn-secondary weapon" id="scissorsIcon" disabled data-weapon="scissors"><i class="fas fa-hand-scissors fa-2x"></i> </button>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-sm-12 centerText">
+                    <div class="col-sm-12 centerText" id="weaponText">
                         <h4>SELECT YOUR WEAPON!</h4>
                     </div>
                 </div>
-
-                <div class="col-xs-10 centerText" id="weaponRow">
-                    <div class=" btn-group-toggle" data-toggle="buttons" role="group" aria-label="Select Your Weapon!">
-                        <button type="button" class="btn btn-secondary" id="rockIcon"><i class="fas fa-hand-rock fa-2x"></i></button>
-                        <button type="button" class="btn btn-secondary" id="paperIcon"><i class="fas fa-hand-paper fa-2x"></i></button>
-                        <button type="button" class="btn btn-secondary" id="scissorsIcon"><i class="fas fa-hand-scissors fa-2x"></i> </button>
-                    </div>
-                </div>
             </section>
-
+<!-- 
             <section id="chatSection">
                 <form>
                     <div class="form-group">
@@ -77,7 +76,7 @@
                         </div>
                     </div>
                 </form>
-            </section>
+            </section> -->
         </div>
 
         <!-- Javascript files -->
