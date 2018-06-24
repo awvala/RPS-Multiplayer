@@ -321,6 +321,6 @@ if (playerOne.result.val() !== null && playerTwo.result.val() !== null) {
 
     $("#player1Choice").text("?");
     $("#player2Choice").text("?");
-    }, 5000);
+    }, 3000);
 };
 };
