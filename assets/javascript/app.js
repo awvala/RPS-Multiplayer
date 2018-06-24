@@ -140,7 +140,6 @@ player2.on("value", function(snapshot) {
     $("#gamePad").removeClass("hidden");
     $("#player2Name").text(playerTwo.name);
     $("#player2Choice").text("?");
-    //$("#gameMessage").html(playerOne.name + ", it's your turn!");
     $("#nameSection").addClass("hidden");
 	// Allow only two local players
 	  } else {
@@ -319,7 +318,6 @@ if (playerOne.result.val() !== null && playerTwo.result.val() !== null) {
         choice: null,
       });
     };
-
 
     $("#player1Choice").text("?");
     $("#player2Choice").text("?");
